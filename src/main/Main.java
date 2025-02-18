@@ -6,6 +6,7 @@ package main;
 
 import controller.Controller;
 import db.Konekcija;
+import view.LoginForm;
 
 /**
  *
@@ -14,7 +15,9 @@ import db.Konekcija;
 public class Main {
     public static void main(String[] args) {
         
-        System.out.println(Konekcija.getInstance().getConnection());
+       // System.out.println(Konekcija.getInstance().getConnection());
+        LoginForm lf = new LoginForm();
+        lf.setVisible(true);
     }
 }
 
